@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BasketService, Product } from '@shared';
+import { CartService, Product } from '@shared';
 
 interface BasketProduct {
   product: Product;
@@ -7,17 +7,17 @@ interface BasketProduct {
 }
 
 @Component({
-  selector: 'app-basket',
-  templateUrl: './basket.component.html',
+  selector: 'app-cart',
+  templateUrl: './cart.component.html',
   styles: [
   ]
 })
-export class BasketComponent implements OnInit {
+export class CartComponent implements OnInit {
 
   public items: BasketProduct[] = [];
   public totalItems = 0;
 
-  constructor(private basketService: BasketService) { }
+  constructor(private basketService: CartService) { }
 
   ngOnInit(): void {
     const basketItems = this.basketService.getBasketItems();

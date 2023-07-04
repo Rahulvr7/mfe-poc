@@ -4,7 +4,7 @@ import { Product } from './product';
 @Injectable({
   providedIn: 'root'
 })
-export class BasketService {
+export class CartService {
   private products: Product[] = [];
 
   constructor() { }

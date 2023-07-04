@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-    { path: 'basket', loadChildren: () => import('./basket/basket.module').then(m => m.BasketModule) },
+    { path: 'cart', loadChildren: () => import('./cart/cart.module').then(m => m.CartModule) },
     { path: '', component: HomeComponent, pathMatch: 'full' }
 ];
 

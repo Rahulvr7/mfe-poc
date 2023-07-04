@@ -4,7 +4,7 @@ import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
   { path: '', component: ProductsComponent },
-  { path: 'basket', loadChildren: () => import('mfeBasket/Module').then(m => m.BasketModule) }
+  { path: 'cart', loadChildren: () => import('mfeBasket/Module').then(m => m.CartModule) }
 ];
 
 @NgModule({

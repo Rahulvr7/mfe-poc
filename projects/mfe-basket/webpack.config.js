@@ -30,14 +30,12 @@ module.exports = {
     new ModuleFederationPlugin({
         library: { type: "module" },
 
-        // For remotes (please adjust)
         name: "mfeBasket",
         filename: "remoteEntry.js",
         exposes: {
-          './Module': './projects/mfe-basket/src/app/basket/basket.module.ts',
+          './Module': './projects/mfe-basket/src/app/cart/cart.module.ts',
         },
         
-        // For hosts (please adjust)
         // remotes: {
         //     "shell": "http://localhost:4200/remoteEntry.js",
 

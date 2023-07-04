@@ -1,10 +1,10 @@
-<h3 class="text-xl mb-6">Your Cupcake Basket</h3>
+<h3 class="text-xl mb-6 text-white">Your Cart</h3>
 
-<p *ngIf="totalItems === 0">
-    Oh no! Your cupcake basket is empty. 😢 &nbsp; Treat yourself to a cupcake!
+<p class="text-white" *ngIf="totalItems === 0">
+    Cart is Empty!
 </p>
 
-<div *ngIf="totalItems > 0">
+<div class="text-white" *ngIf="totalItems > 0">
     <table class="table-auto">
         <thead class="border border-y-sky-500 border-x-0 h-8">
         <th class="text-left px-3">Name</th>
