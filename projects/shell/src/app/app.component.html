@@ -3,7 +3,7 @@
     <h1 class="text-4xl text-white"><a routerLink="/">ngResource</a></h1>
   </div>
   <div class="text-l inline-flex justify-end items-center text-slate-700">
-    <span class="mr-4" *ngIf="name$ | async as name; else greeting">Welcome back {{name}}</span>
+    <span class="mr-4 text-white" *ngIf="name$ | async as name; else greeting">Welcome back {{name}}</span>
     <ng-template #greeting>
       <span class="mr-4"></span>
     </ng-template>
