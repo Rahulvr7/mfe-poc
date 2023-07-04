@@ -35,12 +35,6 @@ module.exports = {
         exposes: {
           './Module': './projects/mfe-basket/src/app/cart/cart.module.ts',
         },
-        
-        // remotes: {
-        //     "shell": "http://localhost:4200/remoteEntry.js",
-
-        // },
-
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
           "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
